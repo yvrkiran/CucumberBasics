@@ -18,13 +18,14 @@ public class Login {
 	@When("^enters a \"([a-zA-Z]{1,})\" in UserName field$")
 	public void enters_a_username(String username)  {
 	    // Express the Regexp above with the code you wish you had
+
 		System.out.println("@When --> enters a "+username+" in UserName field");
 	}
 
 	@And("^enters a \"[a-zA-Z]{1,}\" in Password field$")
-	public void enters_a_password() throws Throwable {
+	public void enters_a_password(String password) throws Throwable {
 	    // Express the Regexp above with the code you wish you had
-		System.out.println("@And --> enters a password in Password field");
+		System.out.println("@And --> enters a "+password+" in Password field");
 	}
 
 	@And("^clicks on Login.$")
